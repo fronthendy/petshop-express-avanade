@@ -14,7 +14,7 @@ const petshop = {
     listarPets: () => {
 
         bancoDados.pets.forEach((pet) => {
-    
+
             console.log(`${pet.nome}, ${pet.idade} anos, ${pet.tipo}, ${pet.raca}, ${(pet.vacinado) ? 'vacinado': 'não vacinado'}`);
             pet.servicos.forEach((servico) => {
                 console.log(`${servico.data} - ${servico.nome}`);
